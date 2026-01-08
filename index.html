@@ -2,42 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Protect Kids – Parody Demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Protect Kids | Public Awareness Notice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      background: black;
+      background: #000;
       color: red;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       text-align: center;
       padding: 20px;
     }
+
+    header {
+      border-bottom: 2px solid red;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 10px 0;
+      text-transform: uppercase;
+    }
+
+    .ticker {
+      background: red;
+      color: black;
+      padding: 8px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0.4; }
+    }
+
+    .case-box {
+      border: 2px solid red;
+      padding: 15px;
+      margin: 20px auto;
+      max-width: 700px;
+      background: #111;
+    }
+
     video {
       width: 90%;
       max-width: 600px;
-      border: 3px solid red;
+      border: 4px solid red;
+      margin-top: 15px;
+    }
+
+    .buttons {
       margin-top: 20px;
     }
+
+    .buttons button {
+      background: red;
+      color: black;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .buttons button:hover {
+      background: darkred;
+      color: white;
+    }
+
     .disclaimer {
       color: white;
       font-size: 12px;
-      margin-top: 30px;
+      margin-top: 40px;
+      border-top: 1px solid red;
+      padding-top: 15px;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 11px;
+      color: gray;
     }
   </style>
 </head>
+
 <body>
 
+<header>
   <h1>⚠️ PROTECT YOUR KIDS ⚠️</h1>
-  <p>If you recognize this person, report immediately.</p>
+  <p>Public Awareness & Safety Monitoring Portal</p>
+</header>
 
-  <video controls autoplay loop>
+<div class="ticker">
+  🚨 LIVE ALERT — COMMUNITY AWARENESS NOTICE — DO NOT IGNORE 🚨
+</div>
+
+<div class="case-box">
+  <p><strong>Case ID:</strong> PK-DEMO-247</p>
+  <p><strong>Status:</strong> Under Community Review</p>
+  <p>
+    This individual has been flagged in a <em>public safety awareness demo</em>.
+    If you recognize the person in the video below, remain alert and aware.
+  </p>
+
+  <video controls>
     <source src="VID_20260107_234718_706.mp4" type="video/mp4">
-    Your browser does not support video.
+    Your browser does not support video playback.
   </video>
 
-  <p class="disclaimer">
-    This website is a parody / demo for awareness purposes only.
-  </p>
+  <div class="buttons">
+    <button onclick="alert('Report submitted (not really 😭). This is a parody site.')">
+      REPORT SIGHTING
+    </button>
+    <button onclick="alert('Hotline unavailable. This is a demo 😅')">
+      CALL HOTLINE
+    </button>
+  </div>
+</div>
+
+<p>
+  🚸 Parents are advised to monitor online activity, public spaces, and vibes.<br>
+  Stay safe. Stay aware. Stay unserious.
+</p>
+
+<div class="disclaimer">
+  ⚠️ PARODY DISCLAIMER ⚠️<br>
+  This website is a fictional parody created for entertainment purposes only.<br>
+  No real person is being accused, reported, or investigated.<br>
+  All content, cases, buttons, and alerts are fake.
+</div>
+
+<footer>
+  Protect Kids Initiative © Demo Version • Not affiliated with any authority
+</footer>
 
 </body>
 </html>
